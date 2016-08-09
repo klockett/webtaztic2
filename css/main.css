@@ -1,0 +1,304 @@
+/
+/* HEADER ============================== */
+
+html{
+    background-color: black;
+
+}
+
+body {
+    background-color: black;
+    color: #000;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+}
+article h1{
+    margin: -12%;
+    font-family: "Roboto Condensed";
+    font-weight: bolder;
+    color: white;
+    padding: -25px 0 0;
+    margin-right:10% ;
+    font-size: 3.5em;
+    line-height: 90%;
+
+
+
+
+
+
+}
+button.accordion {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: transparent;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    text-align: center;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+p{
+   color: white;
+    line-height: 90%;
+
+}
+video {
+    opacity: 0.7;
+    background: black none no-repeat scroll 0 0 / cover ;
+    left: 50%;
+    max-height: 100%;
+    max-width: 100% ;
+    position: fixed;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    max-width: 100%;
+
+}
+
+img{
+    max-width: 100%;
+    text-align: center;
+
+}
+.selector, #accordion{
+    color: white;
+    font-size: large;
+    line-height: 90%;
+    cursor: pointer;
+
+
+}
+
+
+nav{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+nav ul li {
+
+    display: inline;
+}
+img {
+    margin: 50px 0 0 100px;
+}
+*header {
+    margin-bottom: 30px;
+    padding-top: 50px;
+    position: relative;
+}
+header::after {
+    clear: both;
+}
+nav ul li a {
+    color: #fff;
+    display: inline;
+    font-family: "Lato",sans-serif;
+    font-size: 0.8em;
+    margin-left: 42px;
+    padding: 0 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+article {
+    font-family: "Merriweather",serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding-top: 15%;
+    line-height: 0.6;
+    margin: 0 auto;
+    width: 1152px;
+    text-align: center;
+    max-width: 100%;
+}
+
+
+
+h2 {
+    font-size: 1.5em;
+}
+article h2 {
+    margin: 0;
+
+    padding: 50px 0 0;
+}
+
+h2:nth-child(1), h2:nth-child(3) {
+    font-weight: 400;
+}
+video {
+    background: black none no-repeat scroll 0 0 / cover ;
+    left: 50%;
+    max-height: 100%;
+    max-width: 100% ;
+    position: fixed;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    max-width: 100%;
+
+}
+footer{
+    color: white;
+    font-size: large;
+}
+
+* tablet portraits size to standard (also point when grid becomes active) */
+@media only screen and (min-width: 767px) and(max-width: 959px) {
+
+
+    img {
+        float:left;
+        padding: 10px;
+        margin: 0px;
+        max-width: 100%;
+    }
+
+    .joystick {
+        float:left;
+        padding: 40px;
+        margin: auto;
+        max-width: 100%;
+
+    }
+
+
+
+}
+
+/* Larger than tablet */
+@media  only screen and(max-width: 767px) {
+
+    .train {
+        float:left;
+        padding:40px;
+        margin: auto;
+        max-width: 100%
+    }
+
+    .joystick {
+        float:left;
+        padding: 40px;
+        margin: auto;
+        max-width: 100%;
+
+    }
+
+
+    nav.primary {
+        display: block;
+        position: static;
+        text-align: center;
+        width:150px;
+        padding: 5px 0px 5px 0px;
+
+
+    }
+
+    nav a {
+        color: #a6abc5;
+
+        margin: 0 80px 0 auto;
+        padding: 9px;
+        width:300px;
+        border: 1px solid #a6abc5;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    nav a:hover {
+        color: #fff; background-color: rgba(255,255,255,.15);
+
+    }
+
+    .logo img {
+        text-align:center;
+        margin: 0 auto 0 85px;
+        max-width: 100%;
+        height:auto;
+
+
+
+    }
+
+    /* Larger than desktop */
+    @media (min-width: 480px) and (max-width: 767px) {
+
+        img {
+            float:left;
+            padding: 20px ;
+            margin: 0px;
+            max-width: 100%;
+        }
+
+        .joystick {
+            float:left;
+            padding: 40px;
+            margin: auto;
+            max-width: 100%;
+
+
+        }
+
+        #accordion{
+            color: white;
+            font-size: large;
+            text-align: center;
+            line-height: 90%;
+            padding: 5%;
+        }
+
+        article h1{
+            margin: -1%;
+            font-family: "Roboto Condensed";
+            font-weight: bold;
+
+            color: white;
+            padding: 2px;
+            float: left;
+            font-size: 2.6em;
+            line-height: 90%;
+
+
+
+
+
+
+        }
+
+
+    }
+
+    /* Larger than Desktop HD */
+    @media (max-width: 479px) {
+
+
+
+
+    }
